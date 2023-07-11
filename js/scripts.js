@@ -259,10 +259,22 @@ const cardFunction = () => {
 
   for (const user of users) {
     const newName = document.createElement('h2');
+    const newAge = document.createElement('h3');
+    const newUserName = document.createElement('h4');
+    const newEmail = document.createElement('h5')
     const newImage = document.createElement('img');
 
     newName.textContent = user.name;
     cardElement.append(newName);
+
+    newAge.textContent = user.age;
+    cardElement.append(newAge);
+
+    newUserName.textContent = user.username;
+    cardElement.append(newUserName);
+
+    newEmail.textContent = user.email;
+    cardElement.append(newEmail);
 
     newImage.src = user.profileImage;
     cardElement.append(newImage);
